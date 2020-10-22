@@ -2,7 +2,7 @@ package fcu.iecs.oop.password;
 
 public class PasswordEncoder {
   
-  static String encode(String inputString) {
+  String encode(String inputString) {
     int i;
     String s = "";
     for (i = 0; i < inputString.length(); i++) {
