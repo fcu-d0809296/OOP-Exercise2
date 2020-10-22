@@ -1,11 +1,41 @@
 package fcu.iecs.oop.password;
 
+public class PasswordEncoder {
+  
+  static String encode(String inputString) {
+    int i;
+    String s = "";
+    for (i = 0; i < inputString.length(); i++) {
+      switch (inputString.charAt(i)) {
+        case 'A':
+        case 'a':
+          s += '4';
+          break;
+        
+        case 'E':
+        case 'e':
+          s += '3';
+          break;
+          
+        case 'I':
+        case 'i':
+          s += '1';
+          break;
+          
+        case 'o':
+        case 'O':
+          s += '0';
+          break;
 
-public class PasswordEncoder() {
+        case 'T':
+        case 't':
+          s += '7';
+          break;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+        default:
+          s += inputString.charAt(i);
+      }
+    }
+    return s;
+  }
 }
