@@ -1,7 +1,6 @@
 package fcu.iecs.oop.password;
 
 public class PasswordEncoder {
-  
   String encode(String inputString) {
     int i;
     String s = "";
